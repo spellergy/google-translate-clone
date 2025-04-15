@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            Component={() => (
+            element={
               <Container>
                 <LanguagesBar />
                 <div className="translation-boxes">
@@ -20,7 +20,7 @@ function App() {
                   <TranslatedText />
                 </div>
               </Container>
-            )}
+            }
           />
         </Routes>
       </Router>
